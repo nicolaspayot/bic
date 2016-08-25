@@ -1,0 +1,33 @@
+{
+  "name": "bic",
+  "version": "1.0.0",
+  "description": "BIC (Business Identifier Code) format validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --tap | tnyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolaspayot/bic.git"
+  },
+  "keywords": [
+    "iso 9362",
+    "bic",
+    "bic code",
+    "business identifier code",
+    "swift",
+    "swift-bic",
+    "swift id",
+    "swift code"
+  ],
+  "author": "Nicolas Payot <nicolas.payot@gmail.com> (https://github.com/nicolaspayot)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicolaspayot/bic/issues"
+  },
+  "homepage": "https://github.com/nicolaspayot/bic#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "tap-nyan": "0.0.2"
+  }
+}
