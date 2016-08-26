@@ -4,7 +4,8 @@
   "description": "BIC (Business Identifier Code) format validator",
   "main": "index.js",
   "scripts": {
-    "test": "ava --tap | tnyan"
+    "test": "ava --tap | tnyan",
+    "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
