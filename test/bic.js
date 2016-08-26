@@ -1,5 +1,5 @@
 var test = require('ava');
-var bic = require('../index');
+var bic = require('../');
 
 test('Undefined should not be valid as BIC', function (t) {
   t.false(bic.isValid());
