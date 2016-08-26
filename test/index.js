@@ -57,3 +57,11 @@ test('A BIC with 11 characters (last 5 can be numbers) should be valid', functio
   t.true(bic.isValid('ABCDEFG1234'));
   t.true(bic.isValid('ABCDEF12345'));
 });
+
+test('BIC of popular known banks should be valid', function (t) {
+  t.true(bic.isValid('CHASUS33'));
+  t.true(bic.isValid('BOFAUS3N'));
+  t.true(bic.isValid('WFBIUS6S'));
+  t.true(bic.isValid('CITIUS33'));
+  t.true(bic.isValid('GOLDUS33'));
+});
