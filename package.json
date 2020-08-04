@@ -9,9 +9,10 @@
         "start": "rollup -c -w",
         "build": "rimraf dist/ && rollup -c",
         "test": "jest",
-        "prepublish": "yarn test",
         "format": "prettier --write src/*.ts",
-        "lint": "eslint src/*.ts"
+        "lint": "eslint src/*.ts",
+        "prepare": "yarn build",
+        "preversion": "yarn test"
     },
     "repository": {
         "type": "git",
