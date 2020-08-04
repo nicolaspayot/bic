@@ -1,2 +1,13 @@
 test
 npm-debug.log
+*.log
+src
+node_modules
+prettier.config.js
+rollup.config.js
+babel.config.js
+tsconfig.json
+yarn.lock
+.idea
+.eslintrc.js
+.gitignore

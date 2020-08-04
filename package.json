@@ -1,34 +1,53 @@
 {
-  "name": "bic",
-  "version": "1.0.0",
-  "description": "BIC (Business Identifier Code) format validator",
-  "main": "index.js",
-  "scripts": {
-    "test": "ava --tap | tnyan",
-    "prepublish": "npm test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nicolaspayot/bic.git"
-  },
-  "keywords": [
-    "iso 9362",
-    "bic",
-    "bic code",
-    "business identifier code",
-    "swift",
-    "swift-bic",
-    "swift id",
-    "swift code"
-  ],
-  "author": "Nicolas Payot <nicolas.payot@gmail.com> (https://github.com/nicolaspayot)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nicolaspayot/bic/issues"
-  },
-  "homepage": "https://github.com/nicolaspayot/bic#readme",
-  "devDependencies": {
-    "ava": "^0.16.0",
-    "tap-nyan": "0.0.2"
-  }
+    "name": "bic",
+    "version": "1.0.0",
+    "description": "BIC (Business Identifier Code) format validator",
+    "main": "dist/bic.cjs.js",
+    "module": "dist/bic.esm.js",
+    "browser": "dist/bic.umd.js",
+    "scripts": {
+        "start": "rollup -c -w",
+        "build": "rimraf dist/ && rollup -c",
+        "test": "jest",
+        "prepublish": "yarn test",
+        "format": "prettier --write src/*.ts",
+        "lint": "eslint src/*.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nicolaspayot/bic.git"
+    },
+    "keywords": [
+        "iso 9362",
+        "bic",
+        "bic code",
+        "business identifier code",
+        "swift",
+        "swift-bic",
+        "swift id",
+        "swift code"
+    ],
+    "author": "Nicolas Payot <nicolas.payot@gmail.com> (https://github.com/nicolaspayot)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nicolaspayot/bic/issues"
+    },
+    "homepage": "https://github.com/nicolaspayot/bic#readme",
+    "devDependencies": {
+        "@babel/preset-env": "^7.10.4",
+        "@babel/preset-typescript": "^7.10.4",
+        "@types/jest": "^26.0.7",
+        "@typescript-eslint/eslint-plugin": "^3.7.1",
+        "@typescript-eslint/parser": "^3.7.1",
+        "@wessberg/rollup-plugin-ts": "^1.2.29",
+        "eslint": "^7.5.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.22.0",
+        "jest": "^26.1.0",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.23.0",
+        "rollup-plugin-terser": "^6.1.0",
+        "typescript": "^3.9.7"
+    }
 }
